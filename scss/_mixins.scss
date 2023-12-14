@@ -1,0 +1,29 @@
+@mixin container {
+  max-width: 1256px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin a {
+  color: #000000;
+  font-family: JejuMyeongjo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin input {
+  width: 188px;
+  height: 21px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: rgba(217, 217, 217, 0.5);
+  border: white;
+}
