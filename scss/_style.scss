@@ -1,0 +1,39 @@
+header {
+  height: 141px;
+  .container {
+    @include container;
+    height: 100%;
+    @include flex;
+    img {
+      height: 46px;
+    }
+    .head {
+      width: 810px;
+      @include flex;
+      ul {
+        width: 320px;
+        @include flex;
+        a {
+          @include a;
+        }
+        a:hover {
+          color: rgba(142, 138, 138, 0.364);
+        }
+      }
+      .text {
+        width: 221px;
+        @include flex;
+        input {
+          @include input;
+        }
+      }
+      div {
+        width: 100px;
+        @include flex;
+        i:hover {
+          color: rgba(126, 123, 123, 0.364);
+        }
+      }
+    }
+  }
+}
