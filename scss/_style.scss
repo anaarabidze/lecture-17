@@ -206,9 +206,10 @@ footer {
           display: none;
         }
         div {
-          display: flex;
-          h3 {
-            @include h3;
+          @include flex;
+          h4 {
+            @include h4;
+            margin-left: 14px;
           }
         }
       }
