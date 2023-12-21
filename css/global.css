@@ -159,6 +159,10 @@ table {
   line-height: normal;
 }
 
+i:hover {
+  color: rgba(126, 123, 123, 0.364);
+}
+
 header {
   height: 141px;
 }
@@ -191,7 +195,7 @@ header .container .head {
   }
 }
 header .container .head ul {
-  width: 320px;
+  width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,9 +231,6 @@ header .container .head div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-header .container .head div i:hover {
-  color: rgba(126, 123, 123, 0.364);
 }
 header .container .burgerbar {
   display: none;
@@ -431,20 +432,22 @@ header .container .burgerbar {
 
 footer {
   background: #e4e4e4;
-  padding: 60px 64px;
+  padding: 60px 20px;
   height: 430px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 footer .wrapper {
-  width: 1225px;
+  width: 1380px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-start;
 }
 @media (max-width: 1035px) {
   footer .wrapper {
     display: block;
+    width: 85%;
   }
 }
 @media (max-width: 1035px) {
@@ -482,7 +485,7 @@ footer .wrapper .mydiv1 .div2 {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 1035px) {
+@media (max-width: 1208px) {
   footer .wrapper .mydiv1 .div2 {
     display: none;
   }
@@ -501,19 +504,19 @@ footer .wrapper .mydiv1 .div2 div h4 {
   line-height: normal;
   margin-left: 14px;
 }
-footer .wrapper .wrapper1 {
+footer .wrapper .wrap .wrapper1 {
   width: 560px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 1035px) {
-  footer .wrapper .wrapper1 {
+  footer .wrapper .wrap .wrapper1 {
     width: 80%;
     margin-top: 60px;
   }
 }
-footer .wrapper .wrapper1 .mydiv2 h5 {
+footer .wrapper .wrap .wrapper1 .mydiv2 h5 {
   color: #000;
   font-family: Kaushan Script;
   font-size: 25px;
@@ -522,26 +525,26 @@ footer .wrapper .wrapper1 .mydiv2 h5 {
   line-height: normal;
 }
 @media (max-width: 600px) {
-  footer .wrapper .wrapper1 .mydiv2 h5 {
+  footer .wrapper .wrap .wrapper1 .mydiv2 h5 {
     font-size: 18px;
   }
 }
-footer .wrapper .wrapper1 .mydiv2 img {
+footer .wrapper .wrap .wrapper1 .mydiv2 img {
   width: 173px;
   margin-bottom: 32px;
 }
 @media (max-width: 1035px) {
-  footer .wrapper .wrapper1 .mydiv2 img {
+  footer .wrapper .wrap .wrapper1 .mydiv2 img {
     width: 100px;
   }
 }
-footer .wrapper .wrapper1 .mydiv2 div {
+footer .wrapper .wrap .wrapper1 .mydiv2 div {
   height: 106px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-footer .wrapper .wrapper1 .mydiv2 div h3 {
+footer .wrapper .wrap .wrapper1 .mydiv2 div h3 {
   color: #000;
   font-family: Kameron;
   font-size: 20px;
@@ -550,14 +553,22 @@ footer .wrapper .wrapper1 .mydiv2 div h3 {
   line-height: normal;
 }
 @media (max-width: 600px) {
-  footer .wrapper .wrapper1 .mydiv2 div h3 {
+  footer .wrapper .wrap .wrapper1 .mydiv2 div h3 {
     font-size: 15px;
   }
 }
-footer .icon {
+footer .wrapper .icon {
   width: 142px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 1035px) {
+  footer .wrapper .icon {
+    margin-top: 50px;
+  }
+}
+footer .wrapper .icon a {
+  margin-left: 5px;
 }
 
 .sec2-1 {
@@ -720,5 +731,151 @@ footer .icon {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
+  line-height: normal;
+}
+
+.sec3-1 {
+  background-image: url("../images/cakesback.jpg");
+  height: 615px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec3-1 p {
+  color: white;
+  font-family: Judson;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sec3-3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+@media (max-width: 1240px) {
+  .sec3-3 {
+    max-width: 1256px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 1240px) and (max-width: 1315px) {
+  .sec3-3 {
+    width: 90%;
+  }
+}
+.sec3-3 .wrapper {
+  width: 1062px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1110px) {
+  .sec3-3 .wrapper {
+    display: block;
+    max-width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1105px) {
+  .sec3-3 .wrapper div {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1105px) and (max-width: 1110px) {
+  .sec3-3 .wrapper div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.sec3-3 .wrapper div h2 {
+  color: #000;
+  font-family: JejuMyeongjo;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+}
+.sec3-3 .wrapper div h4 {
+  color: #000;
+  font-family: JejuMyeongjo;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.sec3-3 .wrapper div img {
+  width: 300px;
+  height: 232px;
+  background-size: contain;
+}
+.sec3-3 .wrapper div form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.sec3-3 .wrapper div form input {
+  width: 90px;
+  height: 30px;
+  padding-left: 27px;
+  margin-top: 17px;
+  border-radius: 5px;
+  background: rgba(11, 37, 56, 0.8);
+  width: 130px;
+}
+.sec3-3 .wrapper div form ::-moz-placeholder {
+  color: #fff;
+  font-family: JejuMyeongjo;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sec3-3 .wrapper div form ::placeholder {
+  color: #fff;
+  font-family: JejuMyeongjo;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sec4-1 {
+  background-image: url("../images/cakesback.jpg");
+  height: 615px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+.sec4-1 p {
+  color: white;
+  font-family: Judson;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
   line-height: normal;
 }/*# sourceMappingURL=global.css.map */
