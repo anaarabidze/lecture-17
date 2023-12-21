@@ -7,6 +7,10 @@
   line-height: normal;
 }
 
+i:hover {
+  color: rgba(126, 123, 123, 0.364);
+}
+
 header {
   height: 141px;
   .container {
@@ -23,7 +27,7 @@ header {
         display: none;
       }
       ul {
-        width: 320px;
+        width: 350px;
         @include flex;
         a {
           @include a;
@@ -42,9 +46,6 @@ header {
       div {
         width: 100px;
         @include flex;
-        i:hover {
-          color: rgba(126, 123, 123, 0.364);
-        }
       }
     }
     .burgerbar {
@@ -168,15 +169,17 @@ header {
 
 footer {
   background: #e4e4e4;
-  padding: 60px 64px;
+  padding: 60px 20px;
   height: 430px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   .wrapper {
-    width: 1225px;
+    width: 1380px;
     @include flex;
+    align-items: flex-start;
     @media (max-width: 1035px) {
       display: block;
+      width: 85%;
     }
     .mydiv1 {
       @media (max-width: 1035px) {
@@ -202,7 +205,7 @@ footer {
         margin-top: 32px;
         width: 331px;
         @include flex;
-        @media (max-width: 1035px) {
+        @media (max-width: 1208px) {
           display: none;
         }
         div {
@@ -214,47 +217,54 @@ footer {
         }
       }
     }
-    .wrapper1 {
-      width: 560px;
-      @include flex;
-      @media (max-width: 1035px) {
-        width: 80%;
-        margin-top: 60px;
-      }
-      .mydiv2 {
-        h5 {
-          @include h5;
-          @media (max-width: 600px) {
-            font-size: 18px;
-          }
+    .wrap {
+      .wrapper1 {
+        width: 560px;
+        @include flex;
+        @media (max-width: 1035px) {
+          width: 80%;
+          margin-top: 60px;
         }
-        img {
-          width: 173px;
-          margin-bottom: 32px;
-          @media (max-width: 1035px) {
-            width: 100px;
-          }
-        }
-        div {
-          height: 106px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          h3 {
-            @include h3;
+        .mydiv2 {
+          h5 {
+            @include h5;
             @media (max-width: 600px) {
-              font-size: 15px;
+              font-size: 18px;
+            }
+          }
+          img {
+            width: 173px;
+            margin-bottom: 32px;
+            @media (max-width: 1035px) {
+              width: 100px;
+            }
+          }
+          div {
+            height: 106px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h3 {
+              @include h3;
+              @media (max-width: 600px) {
+                font-size: 15px;
+              }
             }
           }
         }
       }
     }
-  }
-
-  .icon {
-    width: 142px;
-    display: flex;
-    justify-content: space-between;
+    .icon {
+      width: 142px;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: 1035px) {
+        margin-top: 50px;
+      }
+      a {
+        margin-left: 5px;
+      }
+    }
   }
 }
 
@@ -351,5 +361,85 @@ footer {
       flex-shrink: 0;
       @include cookp;
     }
+  }
+}
+
+// page3
+.sec3-1 {
+  background-image: url("../images/cakesback.jpg");
+  @include background;
+  @include center;
+  p {
+    @include p;
+  }
+}
+
+.sec3-3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  @media (max-width: 1240px) {
+    @include container;
+    margin-bottom: 100px;
+  }
+  .wrapper {
+    width: 1062px;
+    @include flex;
+    flex-wrap: wrap;
+    @media (max-width: 1110px) {
+      display: block;
+      max-width: 100%;
+      justify-content: space-around;
+    }
+    div {
+      @media (max-width: 1105px) {
+        margin-left: 20px;
+        @media (max-width: 1110px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      h2 {
+        @include h2;
+      }
+      h4 {
+        @include h2;
+        margin-top: 15px;
+      }
+      img {
+        width: 300px;
+        height: 232px;
+        background-size: contain;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+        input {
+          @include input2;
+          width: 130px;
+        }
+        ::placeholder {
+          color: #fff;
+          font-family: JejuMyeongjo;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+// page4
+.sec4-1 {
+  background-image: url("../images/cakesback.jpg");
+  @include background;
+  @include center;
+  margin-bottom: 200px;
+  p {
+    @include p;
   }
 }
