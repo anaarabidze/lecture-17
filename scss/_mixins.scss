@@ -2,6 +2,9 @@
   max-width: 1256px;
   width: 100%;
   margin: 0 auto;
+  @media (max-width: 1315px) {
+    width: 90%;
+  }
 }
 
 @mixin flex {
@@ -19,11 +22,103 @@
   line-height: normal;
 }
 
+@mixin h1 {
+  color: #000;
+  font-family: Kaisei Decol;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin h2 {
+  color: #000;
+  font-family: JejuMyeongjo;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin background {
+  height: 615px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin input {
   width: 188px;
   height: 21px;
+  padding-left: 10px;
   flex-shrink: 0;
   border-radius: 40px;
   background: rgba(217, 217, 217, 0.5);
-  border: white;
+  border: rgb(254, 254, 254);
+}
+
+@mixin input2 {
+  width: 90px;
+  height: 30px;
+  padding-left: 27px;
+  margin-top: 17px;
+  border-radius: 5px;
+  background: rgba(11, 37, 56, 0.8);
+}
+
+@mixin h3 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin h5 {
+  color: #000;
+  font-family: Kaushan Script;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin h6 {
+  color: #fff;
+  text-align: center;
+  font-family: Karma;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin p {
+  color: white;
+  font-family: Judson;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@mixin cookp {
+  color: #fff;
+  font-family: Kadwa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
