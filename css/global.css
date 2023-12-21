@@ -141,6 +141,24 @@ table {
   text-decoration: none;
 }
 
+::-moz-placeholder {
+  color: #000;
+  font-family: JejuMyeongjo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+::placeholder {
+  color: #000;
+  font-family: JejuMyeongjo;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 header {
   height: 141px;
 }
@@ -153,14 +171,24 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1315px) {
+  header .container {
+    width: 90%;
+  }
+}
 header .container img {
-  height: 46px;
+  height: 110px;
 }
 header .container .head {
   width: 810px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 1134px) {
+  header .container .head {
+    display: none;
+  }
 }
 header .container .head ul {
   width: 320px;
@@ -188,10 +216,11 @@ header .container .head .text {
 header .container .head .text input {
   width: 188px;
   height: 21px;
+  padding-left: 10px;
   flex-shrink: 0;
   border-radius: 40px;
   background: rgba(217, 217, 217, 0.5);
-  border: white;
+  border: rgb(254, 254, 254);
 }
 header .container .head div {
   width: 100px;
@@ -201,4 +230,491 @@ header .container .head div {
 }
 header .container .head div i:hover {
   color: rgba(126, 123, 123, 0.364);
+}
+header .container .burgerbar {
+  display: none;
+}
+@media (max-width: 1134px) {
+  header .container .burgerbar {
+    display: flex;
+  }
+}
+
+.sec-1 {
+  background-image: url("../images/image1.jpg");
+  height: 615px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1344px) {
+  .sec-1 {
+    width: 100%;
+  }
+}
+
+.sec-2 {
+  display: flex;
+  justify-content: center;
+  max-width: 1256px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1315px) {
+  .sec-2 {
+    width: 90%;
+  }
+}
+.sec-2 .arrivals {
+  width: 761px;
+  height: 252px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 723px) {
+  .sec-2 .arrivals {
+    max-width: 70%;
+  }
+}
+.sec-2 .arrivals h1 {
+  color: #000;
+  font-family: Kaisei Decol;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 790px) {
+  .sec-2 .arrivals h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 723px) {
+  .sec-2 .arrivals img {
+    width: 120px;
+  }
+}
+
+.sec-3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+@media (max-width: 1240px) {
+  .sec-3 {
+    max-width: 1256px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 1240px) and (max-width: 1315px) {
+  .sec-3 {
+    width: 90%;
+  }
+}
+.sec-3 .wrapper {
+  width: 1062px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1106px) {
+  .sec-3 .wrapper {
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1105px) {
+  .sec-3 .wrapper div {
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+}
+.sec-3 .wrapper div h2 {
+  color: #000;
+  font-family: JejuMyeongjo;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+.sec-3 .wrapper div img {
+  height: 290px;
+  width: 324px;
+  background-size: cover;
+}
+@media (max-width: 786px) {
+  .sec-3 .wrapper div img {
+    height: 240px;
+    width: 264px;
+  }
+}
+.sec-3 .wrapper div a {
+  display: flex;
+  justify-content: center;
+}
+.sec-3 .wrapper div a input {
+  width: 90px;
+  height: 30px;
+  padding-left: 27px;
+  margin-top: 17px;
+  border-radius: 5px;
+  background: rgba(11, 37, 56, 0.8);
+}
+.sec-3 .wrapper div a ::-moz-placeholder {
+  color: #fff;
+  font-family: JejuMyeongjo;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sec-3 .wrapper div a ::placeholder {
+  color: #fff;
+  font-family: JejuMyeongjo;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sec-4 {
+  background-image: url("../images/image1.jpg");
+  height: 615px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 578px;
+}
+
+.sec-5 {
+  width: 100%;
+  height: 333px;
+  background: #273a47;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-5 div {
+  width: 1140px;
+  max-width: 1256px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1315px) {
+  .sec-5 div {
+    width: 90%;
+  }
+}
+.sec-5 div h6 {
+  color: #fff;
+  text-align: center;
+  font-family: Karma;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer {
+  background: #e4e4e4;
+  padding: 60px 64px;
+  height: 430px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .wrapper {
+  width: 1225px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1035px) {
+  footer .wrapper {
+    display: block;
+  }
+}
+@media (max-width: 1035px) {
+  footer .wrapper .mydiv1 {
+    display: block;
+  }
+}
+footer .wrapper .mydiv1 .tbc {
+  height: 50px;
+}
+footer .wrapper .mydiv1 .div1 {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 44px;
+}
+@media (max-width: 1035px) {
+  footer .wrapper .mydiv1 .div1 {
+    display: none;
+  }
+}
+footer .wrapper .mydiv1 .div1 h3 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .wrapper .mydiv1 .div2 {
+  margin-top: 32px;
+  width: 331px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1035px) {
+  footer .wrapper .mydiv1 .div2 {
+    display: none;
+  }
+}
+footer .wrapper .mydiv1 .div2 div {
+  display: flex;
+}
+footer .wrapper .mydiv1 .div2 div h3 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .wrapper .wrapper1 {
+  width: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1035px) {
+  footer .wrapper .wrapper1 {
+    width: 80%;
+    margin-top: 60px;
+  }
+}
+footer .wrapper .wrapper1 .mydiv2 h5 {
+  color: #000;
+  font-family: Kaushan Script;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 600px) {
+  footer .wrapper .wrapper1 .mydiv2 h5 {
+    font-size: 18px;
+  }
+}
+footer .wrapper .wrapper1 .mydiv2 img {
+  width: 173px;
+  margin-bottom: 32px;
+}
+@media (max-width: 1035px) {
+  footer .wrapper .wrapper1 .mydiv2 img {
+    width: 100px;
+  }
+}
+footer .wrapper .wrapper1 .mydiv2 div {
+  height: 106px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .wrapper .wrapper1 .mydiv2 div h3 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 600px) {
+  footer .wrapper .wrapper1 .mydiv2 div h3 {
+    font-size: 15px;
+  }
+}
+footer .icon {
+  width: 142px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec2-1 {
+  background-image: url("../images/cookie.jpg");
+  height: 615px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1344px) {
+  .sec2-1 {
+    width: 100%;
+  }
+}
+.sec2-1 p {
+  color: white;
+  font-family: Judson;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sec2-3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+@media (max-width: 1240px) {
+  .sec2-3 {
+    max-width: 1256px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 1240px) and (max-width: 1315px) {
+  .sec2-3 {
+    width: 90%;
+  }
+}
+.sec2-3 .wrapper {
+  width: 1062px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+  .sec2-3 .wrapper {
+    display: block;
+    max-width: 100%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1105px) {
+  .sec2-3 .wrapper div {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1105px) and (max-width: 900px) {
+  .sec2-3 .wrapper div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.sec2-3 .wrapper div h2 {
+  color: #000;
+  font-family: JejuMyeongjo;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+}
+.sec2-3 .wrapper div h4 {
+  color: #000;
+  font-family: JejuMyeongjo;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 27px;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.sec2-3 .wrapper div img {
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.sec2-3 .wrapper div form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+.sec2-3 .wrapper div form input {
+  width: 90px;
+  height: 30px;
+  padding-left: 27px;
+  margin-top: 17px;
+  border-radius: 5px;
+  background: rgba(11, 37, 56, 0.8);
+  width: 130px;
+}
+.sec2-3 .wrapper div form ::-moz-placeholder {
+  color: #fff;
+  font-family: JejuMyeongjo;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sec2-3 .wrapper div form ::placeholder {
+  color: #fff;
+  font-family: JejuMyeongjo;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sec2-4 {
+  background-image: url("../images/cookieback.jpg");
+  height: 615px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 523px;
+  display: flex;
+  justify-content: flex-start;
+}
+.sec2-4 div {
+  width: 55%;
+  height: 524px;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec2-4 div p {
+  width: 577px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Kadwa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }/*# sourceMappingURL=global.css.map */
