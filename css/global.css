@@ -489,14 +489,17 @@ footer .wrapper .mydiv1 .div2 {
 }
 footer .wrapper .mydiv1 .div2 div {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-footer .wrapper .mydiv1 .div2 div h3 {
+footer .wrapper .mydiv1 .div2 div h4 {
   color: #000;
   font-family: Kameron;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-left: 14px;
 }
 footer .wrapper .wrapper1 {
   width: 560px;
