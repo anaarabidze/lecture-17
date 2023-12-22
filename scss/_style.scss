@@ -60,8 +60,14 @@ header {
 .sec-1 {
   background-image: url("../images/image1.jpg");
   @include background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 1344px) {
     width: 100%;
+  }
+  p {
+    @include p;
   }
 }
 
@@ -134,13 +140,9 @@ header {
         input {
           @include input2;
         }
-        ::placeholder {
-          color: #fff;
-          font-family: JejuMyeongjo;
-          font-size: 17px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+        input[type="button"] {
+          color: white;
+          cursor: pointer;
         }
       }
     }
@@ -148,9 +150,9 @@ header {
 }
 
 .sec-4 {
-  background-image: url("../images/image1.jpg");
+  background-image: url("../images/background.jpg");
   @include background;
-  height: 578px;
+  height: 700px;
 }
 
 .sec-5 {
@@ -316,7 +318,7 @@ footer {
         margin-top: 15px;
       }
       img {
-        width: 192px;
+        width: 220px;
         height: 192px;
         border-radius: 50%;
         background-size: cover;
@@ -329,13 +331,10 @@ footer {
           @include input2;
           width: 130px;
         }
-        ::placeholder {
-          color: #fff;
-          font-family: JejuMyeongjo;
-          font-size: 17px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+        input[type="button"] {
+          border: none;
+          color: white;
+          cursor: pointer;
         }
       }
     }
@@ -379,7 +378,7 @@ footer {
 .sec3-3 {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 250px;
   @media (max-width: 1240px) {
     @include container;
     margin-bottom: 100px;
@@ -424,13 +423,10 @@ footer {
           @include input2;
           width: 130px;
         }
-        ::placeholder {
-          color: #fff;
-          font-family: JejuMyeongjo;
-          font-size: 17px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+        input[type="button"] {
+          border: none;
+          color: white;
+          cursor: pointer;
         }
       }
     }
@@ -439,11 +435,105 @@ footer {
 
 // page4
 .sec4-1 {
-  background-image: url("../images/cakesback.jpg");
+  background-image: url("../images/back.jpg");
   @include background;
   @include center;
   margin-bottom: 200px;
   p {
     @include p;
+  }
+}
+
+.sec4-2 {
+  margin-bottom: 250px;
+  .di {
+    width: 1300px;
+    @include flex;
+    @include container;
+    align-items: flex-start;
+    img {
+      height: 550px;
+      width: 600px;
+      background-size: contain;
+      @media (max-width: 1272px) {
+        height: 350px;
+        width: 400px;
+      }
+      @media (max-width: 800px) {
+        width: 350px;
+        height: 300px;
+      }
+    }
+  }
+  .wrapp {
+    width: 583px;
+    height: 555px;
+    @media (max-width: 1520px) {
+      width: 500px;
+    }
+    @media (max-width: 1278px) {
+      width: 400px;
+    }
+    @media (max-width: 958px) {
+      width: 300px;
+    }
+    @media (max-width: 800px) {
+      width: 200px;
+    }
+
+    .cheesecake {
+      @include cheesecake;
+      @media (max-width: 1520px) {
+        font-size: 30px;
+      }
+    }
+    .ingredients {
+      @include ingredients;
+      @media (max-width: 1520px) {
+        font-size: 25px;
+      }
+    }
+    .description {
+      @include description;
+      @media (max-width: 1272px) {
+        font-size: 15px;
+      }
+    }
+    .price {
+      @include price;
+      margin-bottom: 31px;
+    }
+    .mes {
+      @include mes;
+    }
+    .text {
+      width: 320px;
+      height: 40px;
+      padding-left: 10px;
+      margin-bottom: 50px;
+      @media (max-width: 830px) {
+        width: 250px;
+      }
+    }
+    ::placeholder {
+      font-size: 15px;
+      color: rgb(112, 109, 109);
+    }
+    .button {
+      border-radius: 20px;
+      background: #24253c;
+      width: 256.617px;
+      height: 36px;
+      flex-shrink: 0;
+      @media (max-width: 830px) {
+        width: 200px;
+      }
+    }
+    input[type="button"] {
+      background: rgba(11, 37, 56, 0.8);
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
   }
 }
