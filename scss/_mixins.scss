@@ -15,7 +15,8 @@
 
 @mixin a {
   color: #000000;
-  font-family: JejuMyeongjo;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -24,7 +25,8 @@
 
 @mixin h1 {
   color: #000;
-  font-family: Kaisei Decol;
+  font-family: "Kaisei Decol", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -33,7 +35,8 @@
 
 @mixin h2 {
   color: #000;
-  font-family: JejuMyeongjo;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -65,7 +68,6 @@
 @mixin input2 {
   width: 90px;
   height: 30px;
-  padding-left: 27px;
   margin-top: 17px;
   border-radius: 5px;
   background: rgba(11, 37, 56, 0.8);
@@ -73,7 +75,8 @@
 
 @mixin h3 {
   color: #000;
-  font-family: Kameron;
+  font-family: "Kameron", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -82,7 +85,8 @@
 
 @mixin h4 {
   color: #000;
-  font-family: Kameron;
+  font-family: "Kameron", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -91,7 +95,8 @@
 
 @mixin h5 {
   color: #000;
-  font-family: Kaushan Script;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -101,7 +106,8 @@
 @mixin h6 {
   color: #fff;
   text-align: center;
-  font-family: Karma;
+  font-family: "Karma", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -110,7 +116,8 @@
 
 @mixin p {
   color: white;
-  font-family: Judson;
+  font-family: "Judson", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -119,7 +126,8 @@
 
 @mixin cookp {
   color: #fff;
-  font-family: Kadwa;
+  font-family: "Kadwa", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -134,10 +142,65 @@
 
 @mixin value {
   color: #fff;
-  font-family: JejuMyeongjo;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+}
+
+@mixin cheesecake {
+  color: #000;
+  font-family: "Metal", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+@mixin ingredients {
+  color: #000;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: px;
+}
+
+@mixin description {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 19px;
+}
+
+@mixin price {
+  color: #000;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin mes {
+  color: #000;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 23px;
 }
