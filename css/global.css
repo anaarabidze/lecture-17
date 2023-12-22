@@ -202,7 +202,8 @@ header .container .head ul {
 }
 header .container .head ul a {
   color: #000000;
-  font-family: JejuMyeongjo;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -249,11 +250,23 @@ header .container .burgerbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1344px) {
   .sec-1 {
     width: 100%;
   }
+}
+.sec-1 p {
+  color: white;
+  font-family: "Judson", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .sec-2 {
@@ -277,7 +290,8 @@ header .container .burgerbar {
 }
 .sec-2 .arrivals h1 {
   color: #000;
-  font-family: Kaisei Decol;
+  font-family: "Kaisei Decol", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -339,7 +353,8 @@ header .container .burgerbar {
 }
 .sec-3 .wrapper div h2 {
   color: #000;
-  font-family: JejuMyeongjo;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -368,37 +383,24 @@ header .container .burgerbar {
 .sec-3 .wrapper div a input {
   width: 90px;
   height: 30px;
-  padding-left: 27px;
   margin-top: 17px;
   border-radius: 5px;
   background: rgba(11, 37, 56, 0.8);
 }
-.sec-3 .wrapper div a ::-moz-placeholder {
-  color: #fff;
-  font-family: JejuMyeongjo;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.sec-3 .wrapper div a ::placeholder {
-  color: #fff;
-  font-family: JejuMyeongjo;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.sec-3 .wrapper div a input[type=button] {
+  color: white;
+  cursor: pointer;
 }
 
 .sec-4 {
-  background-image: url("../images/image1.jpg");
+  background-image: url("../images/background.jpg");
   height: 615px;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 578px;
+  height: 700px;
 }
 
 .sec-5 {
@@ -423,7 +425,8 @@ header .container .burgerbar {
 .sec-5 div h6 {
   color: #fff;
   text-align: center;
-  font-family: Karma;
+  font-family: "Karma", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -472,7 +475,8 @@ footer .wrapper .mydiv1 .div1 {
 }
 footer .wrapper .mydiv1 .div1 h3 {
   color: #000;
-  font-family: Kameron;
+  font-family: "Kameron", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -497,7 +501,8 @@ footer .wrapper .mydiv1 .div2 div {
 }
 footer .wrapper .mydiv1 .div2 div h4 {
   color: #000;
-  font-family: Kameron;
+  font-family: "Kameron", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -518,7 +523,8 @@ footer .wrapper .wrap .wrapper1 {
 }
 footer .wrapper .wrap .wrapper1 .mydiv2 h5 {
   color: #000;
-  font-family: Kaushan Script;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -546,7 +552,8 @@ footer .wrapper .wrap .wrapper1 .mydiv2 div {
 }
 footer .wrapper .wrap .wrapper1 .mydiv2 div h3 {
   color: #000;
-  font-family: Kameron;
+  font-family: "Kameron", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -590,7 +597,8 @@ footer .wrapper .icon a {
 }
 .sec2-1 p {
   color: white;
-  font-family: Judson;
+  font-family: "Judson", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -638,7 +646,8 @@ footer .wrapper .icon a {
 }
 .sec2-3 .wrapper div h2 {
   color: #000;
-  font-family: JejuMyeongjo;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -649,7 +658,8 @@ footer .wrapper .icon a {
 }
 .sec2-3 .wrapper div h4 {
   color: #000;
-  font-family: JejuMyeongjo;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -660,7 +670,7 @@ footer .wrapper .icon a {
   margin-top: 15px;
 }
 .sec2-3 .wrapper div img {
-  width: 192px;
+  width: 220px;
   height: 192px;
   border-radius: 50%;
   background-size: cover;
@@ -673,27 +683,15 @@ footer .wrapper .icon a {
 .sec2-3 .wrapper div form input {
   width: 90px;
   height: 30px;
-  padding-left: 27px;
   margin-top: 17px;
   border-radius: 5px;
   background: rgba(11, 37, 56, 0.8);
   width: 130px;
 }
-.sec2-3 .wrapper div form ::-moz-placeholder {
-  color: #fff;
-  font-family: JejuMyeongjo;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.sec2-3 .wrapper div form ::placeholder {
-  color: #fff;
-  font-family: JejuMyeongjo;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.sec2-3 .wrapper div form input[type=button] {
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 .sec2-4 {
@@ -722,7 +720,8 @@ footer .wrapper .icon a {
   width: 577px;
   flex-shrink: 0;
   color: #fff;
-  font-family: Kadwa;
+  font-family: "Kadwa", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -748,7 +747,8 @@ footer .wrapper .icon a {
 }
 .sec3-1 p {
   color: white;
-  font-family: Judson;
+  font-family: "Judson", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -758,7 +758,7 @@ footer .wrapper .icon a {
 .sec3-3 {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 250px;
 }
 @media (max-width: 1240px) {
   .sec3-3 {
@@ -796,7 +796,8 @@ footer .wrapper .icon a {
 }
 .sec3-3 .wrapper div h2 {
   color: #000;
-  font-family: JejuMyeongjo;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -807,7 +808,8 @@ footer .wrapper .icon a {
 }
 .sec3-3 .wrapper div h4 {
   color: #000;
-  font-family: JejuMyeongjo;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -836,31 +838,19 @@ footer .wrapper .icon a {
 .sec3-3 .wrapper div form input {
   width: 90px;
   height: 30px;
-  padding-left: 27px;
   margin-top: 17px;
   border-radius: 5px;
   background: rgba(11, 37, 56, 0.8);
   width: 130px;
 }
-.sec3-3 .wrapper div form ::-moz-placeholder {
-  color: #fff;
-  font-family: JejuMyeongjo;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.sec3-3 .wrapper div form ::placeholder {
-  color: #fff;
-  font-family: JejuMyeongjo;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.sec3-3 .wrapper div form input[type=button] {
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 .sec4-1 {
-  background-image: url("../images/cakesback.jpg");
+  background-image: url("../images/back.jpg");
   height: 615px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -874,9 +864,172 @@ footer .wrapper .icon a {
 }
 .sec4-1 p {
   color: white;
-  font-family: Judson;
+  font-family: "Judson", serif;
+  font-family: "Roboto", sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.sec4-2 {
+  margin-bottom: 250px;
+}
+.sec4-2 .di {
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1256px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+@media (max-width: 1315px) {
+  .sec4-2 .di {
+    width: 90%;
+  }
+}
+.sec4-2 .di img {
+  height: 550px;
+  width: 600px;
+  background-size: contain;
+}
+@media (max-width: 1272px) {
+  .sec4-2 .di img {
+    height: 350px;
+    width: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .sec4-2 .di img {
+    width: 350px;
+    height: 300px;
+  }
+}
+.sec4-2 .wrapp {
+  width: 583px;
+  height: 555px;
+}
+@media (max-width: 1520px) {
+  .sec4-2 .wrapp {
+    width: 500px;
+  }
+}
+@media (max-width: 1278px) {
+  .sec4-2 .wrapp {
+    width: 400px;
+  }
+}
+@media (max-width: 958px) {
+  .sec4-2 .wrapp {
+    width: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .sec4-2 .wrapp {
+    width: 200px;
+  }
+}
+.sec4-2 .wrapp .cheesecake {
+  color: #000;
+  font-family: "Metal", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+@media (max-width: 1520px) {
+  .sec4-2 .wrapp .cheesecake {
+    font-size: 30px;
+  }
+}
+.sec4-2 .wrapp .ingredients {
+  color: #000;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: px;
+}
+@media (max-width: 1520px) {
+  .sec4-2 .wrapp .ingredients {
+    font-size: 25px;
+  }
+}
+.sec4-2 .wrapp .description {
+  color: #000;
+  font-family: "Kameron", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 19px;
+}
+@media (max-width: 1272px) {
+  .sec4-2 .wrapp .description {
+    font-size: 15px;
+  }
+}
+.sec4-2 .wrapp .price {
+  color: #000;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 31px;
+}
+.sec4-2 .wrapp .mes {
+  color: #000;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 23px;
+}
+.sec4-2 .wrapp .text {
+  width: 320px;
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 50px;
+}
+@media (max-width: 830px) {
+  .sec4-2 .wrapp .text {
+    width: 250px;
+  }
+}
+.sec4-2 .wrapp ::-moz-placeholder {
+  font-size: 15px;
+  color: rgb(112, 109, 109);
+}
+.sec4-2 .wrapp ::placeholder {
+  font-size: 15px;
+  color: rgb(112, 109, 109);
+}
+.sec4-2 .wrapp .button {
+  border-radius: 20px;
+  background: #24253c;
+  width: 256.617px;
+  height: 36px;
+  flex-shrink: 0;
+}
+@media (max-width: 830px) {
+  .sec4-2 .wrapp .button {
+    width: 200px;
+  }
+}
+.sec4-2 .wrapp input[type=button] {
+  background: rgba(11, 37, 56, 0.8);
+  border: none;
+  color: white;
+  cursor: pointer;
 }/*# sourceMappingURL=global.css.map */
