@@ -446,11 +446,13 @@ footer {
 
 .sec4-2 {
   margin-bottom: 250px;
+
   .di {
-    width: 1300px;
+    width: 1200px;
     @include flex;
     @include container;
     align-items: flex-start;
+
     img {
       height: 550px;
       width: 600px;
@@ -512,7 +514,7 @@ footer {
       padding-left: 10px;
       margin-bottom: 50px;
       @media (max-width: 830px) {
-        width: 250px;
+        width: 150px;
       }
     }
     ::placeholder {
@@ -526,7 +528,7 @@ footer {
       height: 36px;
       flex-shrink: 0;
       @media (max-width: 830px) {
-        width: 200px;
+        width: 100px;
       }
     }
     input[type="button"] {
