@@ -876,7 +876,7 @@ footer .wrapper .icon a {
   margin-bottom: 250px;
 }
 .sec4-2 .di {
-  width: 1300px;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1004,7 +1004,7 @@ footer .wrapper .icon a {
 }
 @media (max-width: 830px) {
   .sec4-2 .wrapp .text {
-    width: 250px;
+    width: 150px;
   }
 }
 .sec4-2 .wrapp ::-moz-placeholder {
@@ -1024,7 +1024,7 @@ footer .wrapper .icon a {
 }
 @media (max-width: 830px) {
   .sec4-2 .wrapp .button {
-    width: 200px;
+    width: 100px;
   }
 }
 .sec4-2 .wrapp input[type=button] {
